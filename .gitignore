@@ -1,0 +1,38 @@
+# Build / dist
+build/
+dist/
+*.spec
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Dev venv (non versionato — usa setup.bat per ricrearlo)
+.venv/
+
+# Config locale (creato a run-time dall'app)
+config.json
+
+# Log
+*.log
+
+# Audio scaricati dall'utente (solo i preset .opus sono versionati)
+audio/*.webm
+audio/*.m4a
+audio/*.mp3
+audio/*.aac
+audio/*.ogg
+audio/*.flac
+
+# WebEngine debug resources (non usati e pesanti >50 MB)
+runtime/Lib/site-packages/PySide6/resources/qtwebengine_devtools_resources.debug.pak
+runtime/Lib/site-packages/PySide6/resources/qtwebengine_devtools_resources.pak
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+*.DS_Store
